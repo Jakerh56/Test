@@ -14,6 +14,8 @@ RUN \
 	wget -O minecraft_server.1.7.10.jar https://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/minecraft_server.1.7.10.jar && \
 	wget -O libraries/net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar https://libraries.minecraft.net/net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar
 
+RUN chmod +x FTBServer-1.7.10-1448.jar
+	
 # Sets working directory for the CMD instruction (also works for RUN, ENTRYPOINT commands) 
 # Create mount point, and mark it as holding externally mounted volume 
 WORKDIR /data
